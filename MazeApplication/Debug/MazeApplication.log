@@ -1,0 +1,4 @@
+﻿  MazeApplication.cpp
+c:\users\brido\documents\visual studio 2015\projects\mazeapplication\mazeapplication\mazeapplication.cpp(10): warning C4101: 'len' : variable locale non référencée
+  MazeApplication.vcxproj -> c:\users\brido\documents\visual studio 2015\Projects\MazeApplication\Debug\MazeApplication.exe
+  MazeApplication.vcxproj -> c:\users\brido\documents\visual studio 2015\Projects\MazeApplication\Debug\MazeApplication.pdb (Full PDB)
