@@ -23,10 +23,12 @@ public:
 	bool hasparentDoor;
 	bool isvertical;
 
+	Node * m_father;
+
+
 private:
 	Node * m_left_child;
 	Node * m_right_child;
-	Node * m_father;
 
 
 };

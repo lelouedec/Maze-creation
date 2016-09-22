@@ -165,9 +165,64 @@ void Maze::printTheMaze() {
 
 }
 
-void Maze::solver() {
+void Maze::solver(Node * exit, Node * dropedin) {
 
 
+	vector<Node *>   firstparents;// there will be in there all the exit parents 
+	vector <Node *>   secondparents; // there will be in there the starting node parents
+
+	// we want to find the first common parents starting from our leaves 
+
+	findParents(exit,firstparents);
+	findParents(dropedin, secondparents);
+
+	Node * commonencestor;
+
+	//we  need now to find the common ancestor
+
+	for (int i = 0; i < firstparents.size(); i++) {
+
+		Node * node = firstparents[i];
+		for (int j = 0; j < secondparents.size(); i++) {
+			if (node == secondparents[j]) {
+				commonencestor = node;
+			}
+		}
+	}
+
+	// we have the ancestor now we need to find the path from the droped in leaf to the exit 
+
+	vector <Node *> Path;
+
+	Path.push_back(dropedin); // we ahd the startting point to the path 
+
+	createPath(Path, dropedin, commonencestor);
+
+
+
+}
+
+void Maze::createPath(vector<Node * > path, Node * node, Node * lastnode, Node * commonancestor) {
+
+	if (node == commonancestor) {
+		return;
+	}
+	else {
+		if ( ( lastnode == node->getleftchild() || lastnode == node->getrightchild() ) &&  node->hasparentDoor == true ) {// if this is a node and we come from a son 
+			createPath(path, node->m_father, node, commonancestor);			
+		}
+		else if () {
+
+		}
+
+	}
+
+}
+
+void Maze::findParents(Node * node, vector<Node * > parents) {
+
+	parents.push_back(node->m_father);
+	findParents(node->m_father, parents);
 
 }
 
