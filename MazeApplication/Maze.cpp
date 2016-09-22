@@ -207,15 +207,7 @@ void Maze::createPath(vector<Node * > path, Node * node, Node * lastnode, Node *
 	if (node == commonancestor) {
 		return;
 	}
-	else {
-		if ( ( lastnode == node->getleftchild() || lastnode == node->getrightchild() ) &&  node->hasparentDoor == true ) {// if this is a node and we come from a son 
-			createPath(path, node->m_father, node, commonancestor);			
-		}
-		else if () {
-
-		}
-
-	}
+	
 
 }
 

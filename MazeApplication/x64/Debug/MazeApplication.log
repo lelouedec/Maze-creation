@@ -1,3 +1,5 @@
-﻿  svg.cpp
+﻿  Maze.cpp
+c:\users\brido\documents\visual studio 2015\projects\mazeapplication\mazeapplication\maze.cpp(20): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+c:\users\brido\documents\visual studio 2015\projects\mazeapplication\mazeapplication\maze.cpp(284): warning C4717: 'Maze::findParents' : récurrent sur tous les chemins d'accès de contrôle, la fonction entraînera un dépassement de capacité de la pile d'exécution
   MazeApplication.vcxproj -> C:\Users\brido\Documents\Visual Studio 2015\Projects\MazeApplication\x64\Debug\MazeApplication.exe
   MazeApplication.vcxproj -> C:\Users\brido\Documents\Visual Studio 2015\Projects\MazeApplication\x64\Debug\MazeApplication.pdb (Full PDB)
